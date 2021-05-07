@@ -29,7 +29,7 @@ impl Index {
             if blob.len() != 2 {
                 return Err(TgitError::InvalidIndex);
             }
-            index.update(blob[1], blob[0]);
+            index.update(blob[0], blob[1]);
         }
         Ok(index)
     }
